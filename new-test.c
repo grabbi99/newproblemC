@@ -1,18 +1,20 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main ()
+int main()
 {
-    float length, breadth, perimeter;
-    printf("Enter length of Rectangle \n");
-    scanf("%f", &length);
-    printf("Enter Breadth of Rectangle \n");
-    scanf("%f", &breadth);
+    float base, height, area;
 
-    // Perimeter of Rectangle = 2 X(Length + Width)
-    perimeter = 2* (length + breadth);
+    printf("Enter base of the triangle: ");
+    scanf("%f", &base);
+    printf("Enter height of the triangle: ");
+    scanf("%f", &height);
 
-    printf("Perimeter of Rectangle: %f \n", perimeter);
+    /*
+        Area fo triangle = (h*b) / 2
+    */
+    area = (base * height) / 2;
+
+    printf("Area of the triangle = %.2f", area);
 
     return 0;
-
 }
