@@ -11,6 +11,7 @@ int main ()
     scanf("%f", &breadth);
 
     // Perimeter of Rectangle = 2 * (Length + Breadth)
+    
     perimeter = 2 * (length + breadth);
 
     printf("Perimeter of Rectangle: %0.2f \n", perimeter);
@@ -32,6 +33,7 @@ int main ()
     scanf("%f", &breadth);
 
     // Area of Rectangle = Length * Width)
+
     area = length * breadth;
 
     printf("Area of Rectangle: %0.2f \n", area);
@@ -107,10 +109,9 @@ int main()
 
     printf("Enter temperature in Celsius: ");
     scanf("%f", &celsius);
+    
+    //	F = (°C * 9/5) + 32
 
-    /*
-        F = (°C * 9/5) + 32
-    */
     fahrenheit = (celsius * 9 / 5) + 32;
 
     printf("%.2f Celsius = %.2f Fahrenheit", celsius, fahrenheit);
@@ -130,9 +131,8 @@ int main()
     printf("Enter temperature in Fahrenheit: ");
     scanf("%f", &fahrenheit);
 
-    /*
-        °C = (°F - 32) * 5/9
-    */
+    // °C = (°F - 32) * 5/9
+
     celsius = (fahrenheit - 32) * 5/9;
 
     printf("%0.2f Fahrenheit = %0.2f Celsius", fahrenheit, celsius);
@@ -195,10 +195,12 @@ int main()
     scanf("%d", &a);
     printf("Enter Second angles of triangle: ");
     scanf("%d", &b);
+
     /*
         a+b+c = 180°
         c = 180° - (a+b)
     */
+
     c = 180 - (a + b);
 
     printf("Third angle of the triangle = %d", c);
@@ -219,9 +221,8 @@ int main()
     printf("Enter height of the triangle: ");
     scanf("%f", &height);
 
-    /*
-        Area fo triangle = (h*b) / 2
-    */
+    // Area fo triangle = (h*b) / 2
+
     area = (base * height) / 2;
 
     printf("Area of the triangle = %.2f", area);
