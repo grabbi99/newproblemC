@@ -140,3 +140,92 @@ int main()
     return 0;
 }
 
+
+#7. Write a C program to convert days into years, weeks and days.
+
+#include <stdio.h>
+
+int main()
+{
+    int days, years, weeks;
+
+    printf("Enter days: ");
+    scanf("%d", &days);
+
+    years = (days / 365);
+    weeks = (days % 365) / 7;
+    days  = days - ((years * 365) + (weeks * 7));
+
+    printf("YEARS: %d\n", years);
+    printf("WEEKS: %d\n", weeks);
+    printf("DAYS: %d", days);
+
+    return 0;
+}
+
+#9. Write a C program to enter any number and calculate its square root.
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    double num, root;
+
+    printf("Enter any number to find square root: ");
+    scanf("%lf", &num);
+
+    root = sqrt(num);
+
+    printf("Square root of %.2lf = %.2lf", num, root);
+
+    return 0;
+}
+
+
+#10. Write a C program to enter two angles of a triangle and find the third angle.
+
+#include <stdio.h>
+
+int main()
+{
+    int a, b, c;
+
+    printf("Enter first angles of triangle: ");
+    scanf("%d", &a);
+    printf("Enter Second angles of triangle: ");
+    scanf("%d", &b);
+    /*
+        a+b+c = 180°
+        c = 180° - (a+b)
+    */
+    c = 180 - (a + b);
+
+    printf("Third angle of the triangle = %d", c);
+
+    return 0;
+}
+
+#11. Write a C program to enter base and height of a triangle and find its area.
+
+#include <stdio.h>
+
+int main()
+{
+    float base, height, area;
+
+    printf("Enter base of the triangle: ");
+    scanf("%f", &base);
+    printf("Enter height of the triangle: ");
+    scanf("%f", &height);
+
+    /*
+        Area fo triangle = (h*b) / 2
+    */
+    area = (base * height) / 2;
+
+    printf("Area of the triangle = %.2f", area);
+
+    return 0;
+}
+
